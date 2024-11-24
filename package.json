@@ -1,0 +1,29 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "start:order": "cross-env ORDER_SERVICE_PORT=4000 node ./src/order-service.js",
+    "start:user": "cross-env USER_SERVICE_PORT=6000 node ./src/user-service.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.15.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "globals": "^15.12.0",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.12",
+    "got": "^11.8.6",
+    "nanoid": "^3.3.7"
+  }
+}
