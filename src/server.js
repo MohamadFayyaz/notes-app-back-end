@@ -10,7 +10,6 @@ const {
   ORDER_SERVICE_PORT = 4000,
   USER_SERVICE_PORT = 6000,
 } = process.env;
-console.log(process.env);
 
 const orderService = `http://localhost:${ORDER_SERVICE_PORT}`;
 const userService = `http://localhost:${USER_SERVICE_PORT}`;
